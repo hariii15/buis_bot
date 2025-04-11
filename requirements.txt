@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+flask
+openai
+python-dotenv
+pinecone-client
+transformers
+git+https://github.com/supabase-community/supabase-py.git
+torch
+requests
