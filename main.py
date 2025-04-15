@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 from supabase import create_client, Client
 import os
 from dotenv import load_dotenv
@@ -9,6 +10,7 @@ load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})  # Allow requests from localhost:5173
 
 # Retrieve Supabase credentials and Hugging Face API key from environment variables
 SUPABASE_URL = os.getenv("SUPABASE_URL")

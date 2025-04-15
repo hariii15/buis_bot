@@ -1,4 +1,4 @@
 flask
 python-dotenv
 huggingface_hub
-supabase-py
+git+https://github.com/supabase-community/supabase-py.git
