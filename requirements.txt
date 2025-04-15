@@ -2,3 +2,5 @@ flask
 python-dotenv
 huggingface_hub
 git+https://github.com/supabase-community/supabase-py.git
+flask-cors
+cors
